@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="78pt"
+              android:paddingBottom="10pt"
+    android:background="@android:color/transparent">
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:text="Drama"
+        android:textColor="@color/item_default_color"
+        android:layout_marginLeft="10pt"
+        android:textSize="24pt"
+        android:layout_marginStart="10pt" />
+</LinearLayout>

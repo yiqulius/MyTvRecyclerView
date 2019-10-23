@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.owen.tvrecyclerview.example.FocusRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fl_main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:focusable="true"
+    android:orientation="vertical">
+
+    <com.owen.tvrecyclerview.example.NiceImageView
+        android:id="@+id/iv_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        app:corner_radius="12dp" />
+
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_alignParentBottom="true"
+        android:clipChildren="false"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <ImageView
+            android:id="@+id/tv_item_image"
+            android:layout_width="@dimen/recycler_view_item_text_width"
+            android:layout_height="46dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/focus_title_video" />
+
+        <TextView
+            android:id="@+id/tv_item_title"
+            android:layout_width="211dp"
+            android:layout_height="251dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="28dp"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="1"
+            android:singleLine="true"
+            android:textSize="16sp"
+            android:layout_marginLeft="25dp" />
+    </FrameLayout>
+</com.owen.tvrecyclerview.example.FocusRelativeLayout>

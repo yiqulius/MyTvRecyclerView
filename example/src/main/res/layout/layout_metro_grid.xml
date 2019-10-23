@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:clipChildren="false">
+
+        <com.owen.tvrecyclerview.widget.TvRecyclerView
+            android:id="@+id/list_menu"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical"
+            app:tv_isMenu="true"
+            app:tv_layoutManager="ListLayoutManager"/>
+
+        <com.owen.tvrecyclerview.widget.TvRecyclerView
+            android:id="@+id/list"
+            android:layout_marginLeft="30pt"
+            android:layout_marginRight="50pt"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginStart="30pt"
+            android:clipChildren="false"
+            app:tv_isIntelligentScroll="true"
+            app:tv_optimizeLayout="true"
+            app:tv_layoutManager="com.owen.tvrecyclerview.manager.MetroGridLayoutManager"
+            android:layout_marginEnd="50pt" />
+
+    </LinearLayout>
+    
+</FrameLayout>
